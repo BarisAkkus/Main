@@ -37,24 +37,3 @@ albums = [
      ]
      ),
 ]
-
-for name,artist,year,songs in albums:
-    print("Album: {},Artist: {}, Year: {}, Songs: {}"
-          .format(name,artist,year,songs))
-print()
-album = albums[3]
-print(album)
-print()
-songs = album[3]
-print(songs)
-print()
-song = songs[2]
-print(song)
-print()
-print(song[1])
-print()
-mayhem = albums[3][3][2][1]
-print(mayhem)
-print()
-print(albums[3])
-print(albums[3][3])
