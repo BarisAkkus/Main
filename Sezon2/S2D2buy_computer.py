@@ -32,4 +32,4 @@ while current_choice != '0':
         
     current_choice = input()
     
-print(computer_parts)    
+print(computer_parts)
