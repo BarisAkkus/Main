@@ -22,11 +22,12 @@ def colour_print(text:str, effect:str) -> None:
         text {str}: The text to print
         effect {str}: The effect we want
     """
-    output_string = "{0}{1}{2}".format(effect,text,RESET)
+    effect_string = "".join(effect)
+    output_string = "{0}{1}{2}".format(effect_string,text,RESET)
     print(output_string)
 
 colour_print("Hello , Red",RED)
-
+colour_print("Hello , Red in nold",RED,BOLD)
 print("This should be in the default terminal colour")
 colour_print("Hello,Blue",BLUE)
 colour_print("Hello,Yellow",YELLOW)
@@ -34,4 +35,3 @@ colour_print("Hello,Bold",BOLD)
 colour_print("Hello,Underline",UNDERLINE)
 colour_print("Hello,Reverse",REVERSE)
 colour_print("Hello,Black",BLACK)
-
